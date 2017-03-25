@@ -6,7 +6,7 @@ function isAuthenticated(context)
     return new Promise(function (resolve, reject)
     {
         if (!context || !context.user) {
-            reject();
+            reject('UNAUTHORIZED');
         } else {
             resolve();
         }

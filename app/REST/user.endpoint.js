@@ -14,7 +14,7 @@ module.exports = function (router)
             if ('UNAUTHORIZED' === error) {
                 response.sendStatus(401);
             } else if ('NOT_FOUND' === error) {
-                response.sendStatus(404);
+                response.sendStatus(401);
             } else {
                 response.sendStatus(500);
             }

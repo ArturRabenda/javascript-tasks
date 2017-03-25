@@ -17,7 +17,7 @@ function createNewOrUpdate(phone)
         for (var i = 0; i < data.length; i++) {
             if (phone._id.toString() === data[i]._id.toString()) {
                 data[i] = phone;
-                defer.resolve({results: data[i]})
+                defer.resolve({results: data[i]});
             } else if (i === data.length - 1) {
                 defer.reject('NOT_FOUND');
             }
@@ -38,7 +38,7 @@ function getDetails(phoneId)
     var defer = q.defer();
     for (var i = 0; i < data.length; i++) {
         if (phoneId === data[i]._id.toString()) {
-            defer.resolve(data[i])
+            defer.resolve(data[i]);
         } else if (i === data.length - 1) {
             defer.reject('NOT_FOUND');
         }

@@ -19,7 +19,7 @@ function getByEmail(email)
         if (email === users[i].email) {
             defer.resolve(users[i]);
         } else if (i === users.length - 1) {
-            defer.reject('NOT_FOUND')
+            defer.reject('NOT_FOUND');
         }
     }
     return defer.promise;
@@ -32,7 +32,7 @@ function get(id)
         if (id === users[i]._id) {
             defer.resolve(users[i]);
         } else if (i === users.length - 1) {
-            defer.reject('NOT_FOUND')
+            defer.reject('NOT_FOUND');
         }
     }
     return defer.promise;

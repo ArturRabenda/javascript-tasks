@@ -5,7 +5,6 @@
 
     function authenticate(request, response, next)
     {
-
         if (!request.headers.authorization) {
             next();
         } else {
@@ -14,8 +13,13 @@
             userManager.getUserByToken(token).then(function (result)
             {
                 request.user = result;
-                next();
-            });
+            }).catch(function (e)
+            {
+                if (e !== 'NOT_FOUND') {
+                    console.error(e);
+                    response.sendStatus(500);
+                }
+            }).finally(next);
         }
     }
 
