@@ -1,0 +1,77 @@
+grunt --force
+
+
+Running "mochaTest:default" (mochaTest) task
+
+
+  Express app
+    POST /dog
+(node:10911) [DEP0025] DeprecationWarning: sys is deprecated. Use util instead.
+      when request is ok
+        ✓ should respond with posted entity including generated id
+        ✓ should be possible to retrieve that dog by id
+      when payload is too large
+Error
+    at readStream (/home/artur/Szablony/javascript-tasks/node_modules/raw-body/index.js:196:17)
+    at getRawBody (/home/artur/Szablony/javascript-tasks/node_modules/raw-body/index.js:106:12)
+    at read (/home/artur/Szablony/javascript-tasks/node_modules/body-parser/lib/read.js:76:3)
+    at jsonParser (/home/artur/Szablony/javascript-tasks/node_modules/body-parser/lib/types/json.js:121:5)
+    at Layer.handle [as handle_request] (/home/artur/Szablony/javascript-tasks/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/artur/Szablony/javascript-tasks/node_modules/express/lib/router/index.js:312:13)
+    at /home/artur/Szablony/javascript-tasks/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/home/artur/Szablony/javascript-tasks/node_modules/express/lib/router/index.js:330:12)
+    at next (/home/artur/Szablony/javascript-tasks/node_modules/express/lib/router/index.js:271:10)
+    at expressInit (/home/artur/Szablony/javascript-tasks/node_modules/express/lib/middleware/init.js:33:5)
+    at Layer.handle [as handle_request] (/home/artur/Szablony/javascript-tasks/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/artur/Szablony/javascript-tasks/node_modules/express/lib/router/index.js:312:13)
+    at /home/artur/Szablony/javascript-tasks/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/home/artur/Szablony/javascript-tasks/node_modules/express/lib/router/index.js:330:12)
+    at next (/home/artur/Szablony/javascript-tasks/node_modules/express/lib/router/index.js:271:10)
+    at query (/home/artur/Szablony/javascript-tasks/node_modules/express/lib/middleware/query.js:49:5)
+    at Layer.handle [as handle_request] (/home/artur/Szablony/javascript-tasks/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/artur/Szablony/javascript-tasks/node_modules/express/lib/router/index.js:312:13)
+    at /home/artur/Szablony/javascript-tasks/node_modules/express/lib/router/index.js:280:7
+    at Function.process_params (/home/artur/Szablony/javascript-tasks/node_modules/express/lib/router/index.js:330:12)
+    at next (/home/artur/Szablony/javascript-tasks/node_modules/express/lib/router/index.js:271:10)
+    at Function.handle (/home/artur/Szablony/javascript-tasks/node_modules/express/lib/router/index.js:176:3)
+        ✓ should respond with 413 status code
+      when name is missing
+        ✓ should respond with 400 status code
+      when name is empty string
+        ✓ should respond with 400 status code
+      when name is 11 characters long
+        ✓ should respond with 400 status code
+      when owner is a number
+        ✓ should respond with 400 status code
+      when createDate is negative number
+        ✓ should respond with 400 status code
+      when owner is missing
+        ✓ should respond with 200 status code
+      when posting dog with id not found in db
+        ✓ should respond 404 status code
+      when authentication token is invalid
+        ✓ should respond with 401
+      when authorization header is invalid
+        ✓ should respond with 401
+      when authorization header is missing
+        ✓ should respond with 401
+      when not connected to DB
+        ✓ should respond with 500
+    GET /dog/:id
+      when asking for non-existing id
+        ✓ should respond with 404 status code
+      when authentication token is invalid
+        ✓ should respond with 401
+      when authorization header is invalid
+        ✓ should respond with 401
+      when authorization header is missing
+        ✓ should respond with 401
+      when not connected to DB
+        ✓ should respond with 500
+    GET /hound/:id
+      ✓ should redirect to /dog/:id
+    static content
+      ✓ should be served from public directory (164ms)
+
+
+  21 passing (328ms)
