@@ -1,0 +1,140 @@
+ Stack:
+    Error: Failed expectation
+        at Object.<anonymous> (/home/artur/Szablony/javascript-tasks/test/features/gruntTask.spec.js:41:55)
+        at /home/artur/Szablony/javascript-tasks/node_modules/jasminewd2/index.js:94:23
+        at new ManagedPromise (/home/artur/Szablony/javascript-tasks/node_modules/selenium-webdriver/lib/promise.js:1082:7)
+        at controlFlowExecute (/home/artur/Szablony/javascript-tasks/node_modules/jasminewd2/index.js:80:18)
+        at TaskQueue.execute_ (/home/artur/Szablony/javascript-tasks/node_modules/selenium-webdriver/lib/promise.js:2913:14)
+        at TaskQueue.executeNext_ (/home/artur/Szablony/javascript-tasks/node_modules/selenium-webdriver/lib/promise.js:2896:21)
+        at asyncRun (/home/artur/Szablony/javascript-tasks/node_modules/selenium-webdriver/lib/promise.js:2820:25)
+        at /home/artur/Szablony/javascript-tasks/node_modules/selenium-webdriver/lib/promise.js:639:7
+        at <anonymous>
+  Message:
+    Expected '<?xml version="1.0" encoding="UTF-8"?>
+    <testsuites name="Mocha Tests" timestamp="2017-10-06T13:45:20" time="0.058" tests="12" failures="0">
+      <testsuite name="when we add one element without _id" timestamp="2017-10-06T13:45:20" tests="1" failures="0" time="0.003">
+        <testcase name="phones.endpoint POST /api/phones when user is authenticated when we add one element without _id should respond with 201 and newly created element" time="0.003" className="should respond with 201 and newly created element">
+        </testcase>
+      </testsuite>
+      <testsuite name="and GET /api/phones request is made" timestamp="2017-10-06T13:45:20" tests="1" failures="0" time="0.004">
+        <testcase name="phones.endpoint POST /api/phones when user is authenticated when we add one element without _id and GET /api/phones request is made should response array with 1 element that just has been added" time="0.004" className="should response array with 1 element that just has been added">
+        </testcase>
+      </testsuite>
+      <testsuite name="when updating existing element" timestamp="2017-10-06T13:45:20" tests="1" failures="0" time="0.005">
+        <testcase name="phones.endpoint POST /api/phones when user is authenticated when updating existing element should return updated element on subsequent get request" time="0.005" className="should return updated element on subsequent get request">
+        </testcase>
+      </testsuite>
+      <testsuite name="when user is NOT authenticated" timestamp="2017-10-06T13:45:20" tests="1" failures="0" time="0.005">
+        <testcase name="phones.endpoint POST /api/phones when user is NOT authenticated should respond with 401 and NOT add element to DB" time="0.005" className="should respond with 401 and NOT add element to DB">
+        </testcase>
+      </testsuite>
+      <testsuite name="when we get id first element in the array" timestamp="2017-10-06T13:45:20" tests="1" failures="0" time="0.003">
+        <testcase name="phones.endpoint GET /api/phones/:id when user is authenticated when we get id first element in the array should response 200 and details first phone" time="0.003" className="should response 200 and details first phone">
+        </testcase>
+      </testsuite>
+      <testsuite name="when we get id third element in array" timestamp="2017-10-06T13:45:20" tests="1" failures="0" time="0.004">
+        <testcase name="phones.endpoint GET /api/phones/:id when user is authenticated when we get id third element in array should response 200 and details first phone" time="0.004" className="should response 200 and details first phone">
+        </testcase>
+      </testsuite>
+      <testsuite name="when user is NOT authenticated" timestamp="2017-10-06T13:45:20" tests="1" failures="0" time="0.005">
+        <testcase name="phones.endpoint GET /api/phones/:id when user is NOT authenticated should response 401" time="0.005" className="should response 401">
+        </testcase>
+      </testsuite>
+      <testsuite name="when user is authenticated" timestamp="2017-10-06T13:45:20" tests="1" failures="0" time="0.011">
+        <testcase name="phones.endpoint DELETE /api/phones/:id when user is authenticated should response 200 and remove this element in db" time="0.011" className="should response 200 and remove this element in db">
+        </testcase>
+      </testsuite>
+      <testsuite name="when user is NOT authenticated" timestamp="2017-10-06T13:45:20" tests="1" failures="0" time="0.006">
+        <testcase name="phones.endpoint DELETE /api/phones/:id when user is NOT authenticated should response 401 and NOT remove data" time="0.006" className="should response 401 and NOT remove data">
+        </testcase>
+      </testsuite>
+      <testsuite name="and password is correct" timestamp="2017-10-06T13:45:20" tests="1" failures="0" time="0.003">
+        <testcase name="user.endpoint POST /api/user/auth when user exist in db and password is correct should response status 200 and token" time="0.003" className="should response status 200 and token">
+        </testcase>
+      </testsuite>
+      <testsuite name="and password is NOT correct" timestamp="2017-10-06T13:45:20" tests="1" failures="0" time="0.006">
+        <testcase name="user.endpoint POST /api/user/auth when user exist in db and password is NOT correct should response status 401 and NOT create token" time="0.006" className="should response status 401 and NOT create token">
+        </testcase>
+      </testsuite>
+      <testsuite name="when user NOT exist in DB" timestamp="2017-10-06T13:45:20" tests="1" failures="0" time="0.003">
+        <testcase name="user.endpoint POST /api/user/auth when user NOT exist in DB should get response 401" time="0.003" className="should get response 401">
+        </testcase>
+      </testsuite>
+    </testsuites>' to contain '<testcase name="should remove btn-danger class when mouseleave"'.
+  Stack:
+    Error: Failed expectation
+        at Object.<anonymous> (/home/artur/Szablony/javascript-tasks/test/features/gruntTask.spec.js:42:55)
+        at /home/artur/Szablony/javascript-tasks/node_modules/jasminewd2/index.js:94:23
+        at new ManagedPromise (/home/artur/Szablony/javascript-tasks/node_modules/selenium-webdriver/lib/promise.js:1082:7)
+        at controlFlowExecute (/home/artur/Szablony/javascript-tasks/node_modules/jasminewd2/index.js:80:18)
+        at TaskQueue.execute_ (/home/artur/Szablony/javascript-tasks/node_modules/selenium-webdriver/lib/promise.js:2913:14)
+        at TaskQueue.executeNext_ (/home/artur/Szablony/javascript-tasks/node_modules/selenium-webdriver/lib/promise.js:2896:21)
+        at asyncRun (/home/artur/Szablony/javascript-tasks/node_modules/selenium-webdriver/lib/promise.js:2820:25)
+        at /home/artur/Szablony/javascript-tasks/node_modules/selenium-webdriver/lib/promise.js:639:7
+        at <anonymous>
+
+2) Grunt tasks karma should not report any errors
+  Message:
+    Expected '<?xml version="1.0" encoding="UTF-8"?>
+    <testsuites name="Mocha Tests" timestamp="2017-10-06T13:45:20" time="0.058" tests="12" failures="0">
+      <testsuite name="when we add one element without _id" timestamp="2017-10-06T13:45:20" tests="1" failures="0" time="0.003">
+        <testcase name="phones.endpoint POST /api/phones when user is authenticated when we add one element without _id should respond with 201 and newly created element" time="0.003" className="should respond with 201 and newly created element">
+        </testcase>
+      </testsuite>
+      <testsuite name="and GET /api/phones request is made" timestamp="2017-10-06T13:45:20" tests="1" failures="0" time="0.004">
+        <testcase name="phones.endpoint POST /api/phones when user is authenticated when we add one element without _id and GET /api/phones request is made should response array with 1 element that just has been added" time="0.004" className="should response array with 1 element that just has been added">
+        </testcase>
+      </testsuite>
+      <testsuite name="when updating existing element" timestamp="2017-10-06T13:45:20" tests="1" failures="0" time="0.005">
+        <testcase name="phones.endpoint POST /api/phones when user is authenticated when updating existing element should return updated element on subsequent get request" time="0.005" className="should return updated element on subsequent get request">
+        </testcase>
+      </testsuite>
+      <testsuite name="when user is NOT authenticated" timestamp="2017-10-06T13:45:20" tests="1" failures="0" time="0.005">
+        <testcase name="phones.endpoint POST /api/phones when user is NOT authenticated should respond with 401 and NOT add element to DB" time="0.005" className="should respond with 401 and NOT add element to DB">
+        </testcase>
+      </testsuite>
+      <testsuite name="when we get id first element in the array" timestamp="2017-10-06T13:45:20" tests="1" failures="0" time="0.003">
+        <testcase name="phones.endpoint GET /api/phones/:id when user is authenticated when we get id first element in the array should response 200 and details first phone" time="0.003" className="should response 200 and details first phone">
+        </testcase>
+      </testsuite>
+      <testsuite name="when we get id third element in array" timestamp="2017-10-06T13:45:20" tests="1" failures="0" time="0.004">
+        <testcase name="phones.endpoint GET /api/phones/:id when user is authenticated when we get id third element in array should response 200 and details first phone" time="0.004" className="should response 200 and details first phone">
+        </testcase>
+      </testsuite>
+      <testsuite name="when user is NOT authenticated" timestamp="2017-10-06T13:45:20" tests="1" failures="0" time="0.005">
+        <testcase name="phones.endpoint GET /api/phones/:id when user is NOT authenticated should response 401" time="0.005" className="should response 401">
+        </testcase>
+      </testsuite>
+      <testsuite name="when user is authenticated" timestamp="2017-10-06T13:45:20" tests="1" failures="0" time="0.011">
+        <testcase name="phones.endpoint DELETE /api/phones/:id when user is authenticated should response 200 and remove this element in db" time="0.011" className="should response 200 and remove this element in db">
+        </testcase>
+      </testsuite>
+      <testsuite name="when user is NOT authenticated" timestamp="2017-10-06T13:45:20" tests="1" failures="0" time="0.006">
+        <testcase name="phones.endpoint DELETE /api/phones/:id when user is NOT authenticated should response 401 and NOT remove data" time="0.006" className="should response 401 and NOT remove data">
+        </testcase>
+      </testsuite>
+      <testsuite name="and password is correct" timestamp="2017-10-06T13:45:20" tests="1" failures="0" time="0.003">
+        <testcase name="user.endpoint POST /api/user/auth when user exist in db and password is correct should response status 200 and token" time="0.003" className="should response status 200 and token">
+        </testcase>
+      </testsuite>
+      <testsuite name="and password is NOT correct" timestamp="2017-10-06T13:45:20" tests="1" failures="0" time="0.006">
+        <testcase name="user.endpoint POST /api/user/auth when user exist in db and password is NOT correct should response status 401 and NOT create token" time="0.006" className="should response status 401 and NOT create token">
+        </testcase>
+      </testsuite>
+      <testsuite name="when user NOT exist in DB" timestamp="2017-10-06T13:45:20" tests="1" failures="0" time="0.003">
+        <testcase name="user.endpoint POST /api/user/auth when user NOT exist in DB should get response 401" time="0.003" className="should get response 401">
+        </testcase>
+      </testsuite>
+    </testsuites>' to contain 'errors="0"'.
+  Stack:
+    Error: Failed expectation
+        at Object.<anonymous> (/home/artur/Szablony/javascript-tasks/test/features/gruntTask.spec.js:46:55)
+        at /home/artur/Szablony/javascript-tasks/node_modules/jasminewd2/index.js:94:23
+        at new ManagedPromise (/home/artur/Szablony/javascript-tasks/node_modules/selenium-webdriver/lib/promise.js:1082:7)
+        at controlFlowExecute (/home/artur/Szablony/javascript-tasks/node_modules/jasminewd2/index.js:80:18)
+        at TaskQueue.execute_ (/home/artur/Szablony/javascript-tasks/node_modules/selenium-webdriver/lib/promise.js:2913:14)
+        at TaskQueue.executeNext_ (/home/artur/Szablony/javascript-tasks/node_modules/selenium-webdriver/lib/promise.js:2896:21)
+        at asyncRun (/home/artur/Szablony/javascript-tasks/node_modules/selenium-webdriver/lib/promise.js:2820:25)
+        at /home/artur/Szablony/javascript-tasks/node_modules/selenium-webdriver/lib/promise.js:639:7
+        at <anonymous>
+
